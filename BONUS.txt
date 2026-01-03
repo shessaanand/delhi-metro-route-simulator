@@ -1,0 +1,30 @@
+Project: Metro Route Finder (Bonus Component)
+Name: Shessaanand Siva
+Roll No: 2025623
+
+Data Sources: DMRC Official Website
+
+============================
+ BONUS FEATURES IMPLEMENTED 
+============================
+
+1. EXPANDED NETWORK (More Lines)
+   - Unlike the basic assignment which asked for Blue and Magenta, this program includes 9 lines:
+   - Blue, Magenta, Yellow, Red, Green, Violet, Pink, Grey, and Orange.
+
+2. SMART ROUTING (Least Transfers)
+   - Standard shortest path algorithms often pick a route that is 2 minutes faster but requires 3 changes.
+   - My logic prioritizes COMFORT. It searches for the route with the MINIMUM NUMBER OF INTERCHANGES first.
+   - Travel time is used only as a tie-breaker.
+
+3. DYNAMIC FARE CALCULATION
+   - The program calculates fare based on the estimated travel distance (using time as a proxy).
+   - It implements the official DMRC fare slabs: Rs 11, 21, 32, 43, 54, 64.
+   - It asks the user for the "Day of Travel". If it is "Sunday" or "Holiday", it applies the specific DMRC discounted fare logic.
+
+4. INTERCHANGE PENALTY
+   - A logic was added to detect line changes dynamically.
+   - If a passenger switches lines (e.g., Blue to Yellow), a 12-minute penalty is added to the total travel time to account for walking and waiting.
+
+5. NO USE OF EXTERNAL LIBRARIES
+   - No external libraries are used for data handling.
